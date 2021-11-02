@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- This link is used to download Cross, add and manymore other symbole. We have used this symboles in header container -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+        crossorigin="anonymous"
+    />
+    
+    <!-- It's better to link the css file in head section and edit in that file to design the web. So, go to style.css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div class="header_container">
+        
+        <div class="color-group_container">
+            <div class = "containerpink">
+                <div class="color pink"></div>
+            </div>
+            <div class = "containerblue">
+                <div class="color blue"></div>
+            </div>
+            <div class = "containergreen">
+                <div class="color green"></div>
+            </div>
+            <div class = "containerblack">
+                <div class="color black"></div>
+            </div>
+        </div>
+
+        <div class="add-cross_container ">
+            
+            <div class="add_container">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="remove_container">
+                <i class="fas fa-times"></i>
+
+            </div>
+        </div>
+
+        <!-- <input type="text" class = "text_input"> -->
+
+    </div>
+
+    <div class="main_container">
+        <!-- This comes from DOM. Go to script.js -->
+        <!-- We are going to use Position sticky and position absolute concepts -->
+
+        <div class = "Input_container">
+            <div class = "Input_Outer_container">
+                <textarea  class="Input_text_container" placeholder = "Enter your Input"></textarea>
+            </div>
+            <div class = "Input_Color_container">
+                <div class = "color_picker pink"></div>
+                <div class = "color_picker blue"></div>
+                <div class = "color_picker green"></div>
+                <div class = "color_picker black selected"></div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!-- This link has been used to upload the task_container in main_container, and the task_container is all about DOM so, go to script.js -->
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+    <script src = "script.js"></script>
+
+</body>
+</html>
